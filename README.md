@@ -40,7 +40,7 @@ Dataset dikumpulkan dengan pendekatan **manual crawling** menggunakan mesin penc
 - `"high visibility vest"`
 - `"steel toe boots"`
 - `"PPE Dataset"`
-- - `"SH17 Dataset"`
+- `"SH17 Dataset"`
 
 Gambar yang dikumpulkan merupakan representasi berbagai kondisi lingkungan kerja, sudut pandang kamera, dan beragam pencahayaan untuk memperkaya *variasi data*. File disimpan dalam folder `challenge2/dataset` sebagai dataset mentah.
 
