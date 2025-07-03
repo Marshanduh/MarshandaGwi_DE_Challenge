@@ -78,8 +78,11 @@ Proyek ini dijalankan menggunakan **Python Notebook** di **Google Colab**. Berik
 
 1. **Siapkan Folder di Google Drive**  
    Buat folder baru di Google Drive untuk menyimpan dataset yang sudah dilabel:
+
    your-folder/
+
    ├── images/ ← folder berisi gambar
+
    └── labels/ ← folder berisi file label (.txt)
 
 3. **Buat File Notebook**
@@ -92,11 +95,13 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 5. **Sesuaikan Path Folder**
+
    Ubah IMAGE_DIR dan LABEL_DIR pada kode agar sesuai dengan lokasi folder di Drive. Contoh:
    IMAGE_DIR = "/content/drive/MyDrive/your-folder/images"
    LABEL_DIR = "/content/drive/MyDrive/your-folder/labels"
 
 7. Jalankan Semua Cell Notebook
+
    Setelah path disesuaikan, jalankan seluruh cell untuk melihat hasil bounding box dan distribusi label.
 
 Catatan:
