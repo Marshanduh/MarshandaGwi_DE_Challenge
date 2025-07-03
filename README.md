@@ -81,9 +81,9 @@ Proyek ini dijalankan menggunakan **Python Notebook** di **Google Colab**. Berik
 
    your-folder/
 
-   ├── images/ ← folder berisi gambar
+     ├── images/ ← folder berisi gambar
 
-   └── labels/ ← folder berisi file label (.txt)
+     └── labels/ ← folder berisi file label (.txt)
 
 3. **Buat File Notebook**
    Di dalam folder yang sama (`your-folder`), buat file notebook Colab (contoh: `preview_dataset.ipynb`).
@@ -96,8 +96,12 @@ drive.mount('/content/drive')
 ```
 5. **Sesuaikan Path Folder**
 
-   Ubah IMAGE_DIR dan LABEL_DIR pada kode agar sesuai dengan lokasi folder di Drive. Contoh:
+   Ubah IMAGE_DIR dan LABEL_DIR pada kode agar sesuai dengan lokasi folder di Drive.
+
+   Contoh:
+
    IMAGE_DIR = "/content/drive/MyDrive/your-folder/images"
+
    LABEL_DIR = "/content/drive/MyDrive/your-folder/labels"
 
 7. Jalankan Semua Cell Notebook
