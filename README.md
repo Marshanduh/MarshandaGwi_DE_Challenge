@@ -79,29 +79,25 @@ Proyek ini dijalankan menggunakan **Python Notebook** di **Google Colab**. Berik
 1. **Siapkan Folder di Google Drive**  
    Buat folder baru di Google Drive untuk menyimpan dataset yang sudah dilabel:
    your-folder/
-├── images/ ← folder berisi gambar
-└── labels/ ← folder berisi file label (.txt)
+   ├── images/ ← folder berisi gambar
+   └── labels/ ← folder berisi file label (.txt)
 
-3. **Buat File Notebook**  
-Di dalam folder yang sama (`your-folder`), buat file notebook Colab (contoh: `preview_dataset.ipynb`).
+3. **Buat File Notebook**
+   Di dalam folder yang sama (`your-folder`), buat file notebook Colab (contoh: `preview_dataset.ipynb`).
 
-4. **Mount Google Drive di Colab**  
-Di awal notebook, jalankan kode berikut untuk mengakses file di Google Drive:
+4. **Mount Google Drive di Colab**
+   Di awal notebook, jalankan kode berikut untuk mengakses file di Google Drive:
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 5. **Sesuaikan Path Folder**
-Ubah IMAGE_DIR dan LABEL_DIR pada kode agar sesuai dengan lokasi folder di Drive. Contoh:
+   Ubah IMAGE_DIR dan LABEL_DIR pada kode agar sesuai dengan lokasi folder di Drive. Contoh:
+   IMAGE_DIR = "/content/drive/MyDrive/your-folder/images"
+   LABEL_DIR = "/content/drive/MyDrive/your-folder/labels"
 
-python
-Copy
-Edit
-IMAGE_DIR = "/content/drive/MyDrive/your-folder/images"
-LABEL_DIR = "/content/drive/MyDrive/your-folder/labels"
-
-6. Jalankan Semua Cell Notebook
-Setelah path disesuaikan, jalankan seluruh cell untuk melihat hasil bounding box dan distribusi label.
+7. Jalankan Semua Cell Notebook
+   Setelah path disesuaikan, jalankan seluruh cell untuk melihat hasil bounding box dan distribusi label.
 
 Catatan:
 Tidak ada framework tambahan yang dibutuhkan selain library Python standar seperti cv2, matplotlib, dan os, yang sudah tersedia di Google Colab.
